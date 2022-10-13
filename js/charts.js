@@ -68,14 +68,15 @@ function buildCharts(sample) {
     var dishes = resultFood.fav_dishes;
 
 
-    // 1. Create a variable that filters the metadata array for the object with the desired sample number.
-    var resultMetadataArray = data.metadata.filter(sampleObj => sampleObj.id == sample);
+    // 1. Create a variable that filters exercise for the object with the desired id number.
+    var colors = data.colors;
+    var resultColorArray = colors.filter(sampleObj => sampleObj.id == sample);
 
-    // 2. Create a variable that holds the first sample in the metadata array.
-    var resultMetadata = resultMetadataArray[0];
+    // 2. Create a variable that holds the first sample in the exercise array.
+    var resultColor = resultColorArray[0];
 
-    // 3. Create a variable that holds the washing frequency.
-    var color = resultMetadata["favorite color"];
+    // 3. Create a variable that holds the exercising frequency.
+    var color = resultColor.color;
 
 
     // 8. Create the trace for the bar chart. 
