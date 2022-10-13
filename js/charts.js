@@ -67,9 +67,16 @@ function buildCharts(sample) {
     // 6. Create variables that hold the ids and dishes.
     var dishes = resultFood.fav_dishes;
 
-    // 7. Create the yticks for the bar chart.
-    // Hint: Get the the top 10 otu_ids and map them in descending order  
-    // so the otu_ids with the most bacteria are last.
+
+    // 1. Create a variable that filters the metadata array for the object with the desired sample number.
+    var resultMetadataArray = data.metadata.filter(sampleObj => sampleObj.id == sample);
+
+    // 2. Create a variable that holds the first sample in the metadata array.
+    var resultMetadata = resultMetadataArray[0];
+
+    // 3. Create a variable that holds the washing frequency.
+    var color = parseFloat(resultMetadata["favorite color"]);
+
 
     // 8. Create the trace for the bar chart. 
     var trace = {
@@ -77,7 +84,7 @@ function buildCharts(sample) {
       y: dishes,
       type: "bar",
       orientation: "h",
-      marker: {color: "lightblue"}
+      marker: {color: color}
     };
     var barData = [trace];
     // 9. Create the layout for the bar chart. 
@@ -107,15 +114,15 @@ function buildCharts(sample) {
       mode: "gauge+number",
       gauge: {
         axis: {range: [null, 7]},
-        bar: {color: "#ab7846"},
+        bar: {color: "#e2e620"},
         steps: [
-          {range: [0, 1], color: "#9db8d1", opacity: 0.95},
-          {range: [1, 2], color: "#7ea0bf", opacity: 0.95},
-          {range: [2, 3], color: "#537da3", opacity: 0.95},
-          {range: [3, 4], color: "#37628a", opacity: 0.95},
-          {range: [4, 5], color: "#1c4163", opacity: 0.95},
-          {range: [5, 6], color: "#091f33", opacity: 0.95},
-          {range: [6, 7], color: "#black", opacity: 0.95}
+          {range: [0, 1], color: "#afbac4", opacity: 0.95},
+          {range: [1, 2], color: "#8aa6bf", opacity: 0.95},
+          {range: [2, 3], color: "#688dad", opacity: 0.95},
+          {range: [3, 4], color: "#456c8f", opacity: 0.95},
+          {range: [4, 5], color: "#214d75", opacity: 0.95},
+          {range: [5, 6], color: "#093863", opacity: 0.95},
+          {range: [6, 7], color: "#051c30", opacity: 0.95}
         ]        
       }
     }];
