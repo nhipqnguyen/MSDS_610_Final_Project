@@ -75,13 +75,13 @@ function buildCharts(sample) {
     var resultMetadata = resultMetadataArray[0];
 
     // 3. Create a variable that holds the washing frequency.
-    var color = parseFloat(resultMetadata["favorite color"]);
+    var color = resultMetadata["favorite color"];
 
 
     // 8. Create the trace for the bar chart. 
     var trace = {
-      x: [5 ,4, 3, 2, 1],
-      y: dishes,
+      x: [1 ,2, 3, 4, 5],
+      y: dishes.reverse(),
       type: "bar",
       orientation: "h",
       marker: {color: color}
