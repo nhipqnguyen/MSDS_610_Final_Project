@@ -16,7 +16,9 @@ Data visualization is an important part of EDA. In this project, we would like t
 - The dashboard can be accessed via this link: [MSDS 610 Interactive Dashboard](https://nhipqnguyen.github.io/MSDS_610_Final_Project/). Below is a screenshot of the dashboard after getting deployed to Git Pages.
 
 ![MSDS 610 Interactive Dashboard](https://github.com/nhipqnguyen/MSDS_610_Final_Project/blob/main/images/plotly_dashboard.png)
+
 2. Tableau
+
   Tableau is a visual analytics platform and is one of the most popular data visualization tools today. This analytics platform makes it easier for people to explore and manage data, and faster to discover and share insights. One of Tableau's strengths is that users don't need any prior programming experience to create visualizations. In this project, we have a simple example of how Tableau can help build engaging deliveries to any audience.
 
   The data set we use is from Citi Bike NYC, which contains information on the bike renting service this company provides in New York City. In Tableau, we create worksheets with a variety of graphs from the data, then combine them into a story which provides insights into customers demographic information, service performance, etc. The result story can be accessed via this link: [CitiBikeNYC Story](https://public.tableau.com/app/profile/nhi.nguyen1546/viz/citibike_challenge_16283211732780/NYCCitiBikeStory).
