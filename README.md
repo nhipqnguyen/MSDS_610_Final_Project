@@ -3,7 +3,7 @@
 #### *By Joy Huang and Nhi Nguyen*
 Data visualization is an important part of EDA. In this project, we would like to introduce two common data visualization tools: Plotly.js library and Tableau.
 
-1. Plotly.js
+## 1. Plotly.js
 
   Plotly.js is a charting library that comes with over 40 chart types, 3D charts, statistical graphs, and SVG maps. For demonstration, we use Plotly.js to build a dashboard with interactive charts with a dataset obtained from our classmates' survey responses (survey.json). Upon selection of an ID number in a pull down list, a dashboard with the following visualizations will be displayed:
 - A general information panel with the selected survey participant's information:
@@ -18,7 +18,7 @@ Data visualization is an important part of EDA. In this project, we would like t
 
 ![MSDS 610 Interactive Dashboard](https://github.com/nhipqnguyen/MSDS_610_Final_Project/blob/main/images/plotly_dashboard.png)
 
-2. Tableau
+## 2. Tableau
 
   Tableau is a visual analytics platform and is one of the most popular data visualization tools today. This analytics platform makes it easier for people to explore and manage data, and faster to discover and share insights. One of Tableau's strengths is that users don't need any prior programming experience to create visualizations. In this project, we have a simple example of how Tableau can help build engaging deliveries to any audience.
 
@@ -29,11 +29,10 @@ Data visualization is an important part of EDA. In this project, we would like t
   1. Import the cleaned version of dataset to Tableau Platform
  
   2. Generate questions with the data we have, E.G.:
- 
-    - where do people of NYC usually take bike trips?
-    - How far and how long do they go?
-    - Which day of the weekdays do people ride bikes most?
-    - Does male or female more like to ride bikes?
+  - At which locations in NYC do people usually use Citi Bike bike-sharing service?
+  - How far and how long do they go?
+  - Which day(s) of the week do people rent Citi Bike bikes the most?
+  - Is there a difference in trip counts among genders?
  
   3. Get answers by dragging variables to filter columns/rows and picking templates to draw graphs in Tableau
  
